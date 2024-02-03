@@ -1,0 +1,79 @@
+/* header {
+background-image: linear-gradient(-50deg, red, orange, yellow, green, blue, indigo, violet);
+font-size: 40px;
+background-size: 100%;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+} */
+/* Body Section */
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sono', monospace;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+}
+
+/* Card Section */
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width:420px;
+    margin: 1em;
+}
+
+/* Search bar */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Hover over and the button turns lighter */
+button:hover {
+    background: #7c7c7c6b ;
+}
+
+
+h1.temp {
+    margin: 0;
+    }
+
+/* button for searching */
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+
+}
+
+/* Search bar input */
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 80px);
+
+}
+
