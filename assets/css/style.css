@@ -1,30 +1,35 @@
-/* header {
-background-image: linear-gradient(-50deg, red, orange, yellow, green, blue, indigo, violet);
-font-size: 40px;
-background-size: 100%;
-background-clip: text;
--webkit-text-fill-color: transparent;
-} */
+
 /* Body Section */
 body {
+    /* Flexbox to center content vertically and horizontally*/
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height:100vh; /*Full viewpoint height*/
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Sono', monospace;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
-    font-size: 120%;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape'); /* Background image fetched from Unsplash with specified dimensions*/
+    font-size: 120%; /*Set base font size*/
+}
+/* Description Section */
+.description {
+    text-transform:capitalize; /* Capitalize text */
+    margin-left: 8px;
+}
+/* Flex Container */
+.flex {
+    display:flex; /* Use flexbox layout */
+    align-items: center;
 }
 
 /* Card Section */
 .card {
-    background: #000000d0;
+    background: #000000d0; /*Semi-transparent black background*/
     color: white;
     padding: 2em;
-    border-radius: 30px;
+    border-radius: 30px; /* Rounded Corners */
     width: 100%;
     max-width:420px;
     margin: 1em;
@@ -35,31 +40,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-/* Hover over and the button turns lighter */
+/* Button Hover Effect */
 button:hover {
-    background: #7c7c7c6b ;
+    background: #7c7c7c6b ; /*Lighter background color on hover*/
 }
-
 
 h1.temp {
     margin: 0;
+    margin-bottom: 0.4em;
     }
 
-/* button for searching */
+/*Button Styles*/
 button {
     margin: 0.5em;
-    border-radius: 50%;
+    border-radius: 50%; /*Rounded Shape*/
     border: none;
     height: 46px;
     width: 46px;
-    outline: none;
+    outline: none; /*Removes outline*/
     background: #7c7c7c2b;
     color: white;
-    cursor: pointer;
-    transition: 0.25s ease-in-out;
+    cursor: pointer; /*Cursor Style*/
+    transition: 0.25s ease-in-out; /*Smooth Transition*/
 
 }
 
@@ -71,9 +75,39 @@ input.search-bar {
     border-radius: 24px;
     background-color: #7c7c7c2b;
     color: white;
-    font-family: inherit;
+    font-family: inherit; /*inherit font family*/
     font-size: 105%;
-    width: calc(100% - 80px);
+    width: calc(100% - 80px); /*Calculate width*/
 
 }
 
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.forecast {
+    
+}
+
+.forecast.content {
+
+}
+
+.day {
+
+}
+
+.toggle-forecast {
+
+}
