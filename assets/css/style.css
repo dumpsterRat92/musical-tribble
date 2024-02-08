@@ -111,7 +111,7 @@ input.search-bar {
     margin: 1em;
 }
 
-.future-forecast {
+.future-forecast-container {
     background: #000000d0; /*Semi-transparent black background*/
     color: white;
     padding: 2em;
