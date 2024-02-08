@@ -26,8 +26,4 @@ Welcome to the Weather Dashboard! This simple application provides you with accu
  I'd also like to add a special thanks to Vinny in bootcamp class for helping, and also for Jonah Lawrence from youtube for helping with some of the code! 
 
  ##Screenshot
-
- ##License
-
-
-
+![screencapture-dumpsterrat92-github-io-musical-tribble-2024-02-08-12_41_06](https://github.com/dumpsterRat92/musical-tribble/assets/153157275/2153847e-476a-415d-821f-0f5266797786)
