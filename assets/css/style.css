@@ -1,18 +1,18 @@
-
 /* Body Section */
 body {
-    /* Flexbox to center content vertically and horizontally*/
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh; /*Full viewpoint height*/
+    min-height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Sono', monospace;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape'); /* Background image fetched from Unsplash with specified dimensions*/
-    font-size: 120%; /*Set base font size*/
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
 }
+
 /* Description Section */
 .description {
     text-transform:capitalize; /* Capitalize text */
@@ -31,9 +31,10 @@ body {
     padding: 2em;
     border-radius: 30px; /* Rounded Corners */
     width: 100%;
-    max-width:420px;
-    margin: 1em;
-    position: absolute;
+    max-width: 420px;
+    margin: 0 auto; /* Center the card horizontally */
+    margin-top: 0.5em;
+    position:relative;
 }
 
 /* Search bar */
@@ -99,6 +100,7 @@ input.search-bar {
 
 .forecast {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .forecast.content {
@@ -111,82 +113,28 @@ input.search-bar {
     margin: 1em;
 }
 
-.future-forecast-container-1 {
-    background: #000000d0; /*Semi-transparent black background*/
-    color: white;
-    padding: 2em;
-    border-radius: 30px; /* Rounded Corners */
-    width: 100%;
-    max-width:420px;
-    margin: 1em;
-    position: relative;
-    bottom: 10px;
-    /* display: flex;
-    flex-direction: inline; */
-    /* justify-content: center, below; */
-
-}
-
-.future-forecast-container-2 {
-    background: #000000d0; /*Semi-transparent black background*/
-    color: white;
-    padding: 2em;
-    border-radius: 30px; /* Rounded Corners */
-    width: 100%;
-    max-width:420px;
-    margin: 1em;
-    position: relative;
-    bottom: 10px;
-    /* display: flex;
-    flex-direction: inline; */
-    /* justify-content: center, below; */
-
-}
-
-.future-forecast-container-3 {
-    background: #000000d0; /*Semi-transparent black background*/
-    color: white;
-    padding: 2em;
-    border-radius: 30px; /* Rounded Corners */
-    width: 100%;
-    max-width:420px;
-    margin: 1em;
-    position: relative;
-    bottom: 10px;
-    /* display: flex;
-    flex-direction: inline; */
-    /* justify-content: center, below; */
-
-}
-
-.future-forecast-container-4 {
-    background: #000000d0; /*Semi-transparent black background*/
-    color: white;
-    padding: 2em;
-    border-radius: 30px; /* Rounded Corners */
-    width: 100%;
-    max-width:420px;
-    margin: 1em;
-    position: relative;
-    bottom: 10px;
-    /* display: flex;
-    flex-direction: inline; */
-    /* justify-content: center, below; */
-
-}
-
+/* Forecast Containers */
+.future-forecast-container-1,
+.future-forecast-container-2,
+.future-forecast-container-3,
+.future-forecast-container-4,
 .future-forecast-container-5 {
     background: #000000d0; /*Semi-transparent black background*/
     color: white;
-    padding: 2em;
+    padding: 1em; /* Reduce padding to make the cards smaller */
     border-radius: 30px; /* Rounded Corners */
-    width: 100%;
-    max-width:420px;
-    margin: 1em;
+    width: calc(20% - 2em); /* Adjust width to fit in a row */
+    max-width: 120px; /* Set maximum width for consistency */
+    margin: 1em 0.5em; /* Reduce margin at the top and bottom */
     position: relative;
-    bottom: 10px;
-    /* display: flex;
-    flex-direction: inline; */
-    /* justify-content: center, below; */
+
+}
+
+/* Container for forecast containers */
+.forecast-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0% /* Push containers to the bottom */
 
 }
